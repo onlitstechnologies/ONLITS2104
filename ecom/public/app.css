@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text] {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 5px;
+    margin-top: 5px;
+}
