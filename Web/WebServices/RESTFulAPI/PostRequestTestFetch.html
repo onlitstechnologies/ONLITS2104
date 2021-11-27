@@ -12,9 +12,30 @@
             name: "Raju Kumar",
             email: "raju.kumar@onlits.local",
             password: "123456"
-        }
+        };
         
-        fetch()
+        function postData(url = '', data = {}) {
+            const response = fetch(url, {
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json' 
+                },
+                redirect: 'follow',
+                referrerPolicy: 'no-referrer',
+                body: JSON.stringify(data)
+            });
+            return response.json();
+        }
+
+        postData('http://127.0.0.1/api/user')
+        .then (data => {
+            console.log(data);
+        });
+
+        document.write("Till now! Aal is well");
     </script>
 </body>
 </html>
